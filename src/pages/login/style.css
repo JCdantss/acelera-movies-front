@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+form {
+  border: 1px solid black;
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  background-color: cyan;
+  
+}
+input {
+  width: 60%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+label {
+  margin-top: 10px;
+}
+button {
+  width: 20%;
+  margin-top: 5px;
+}
+button:hover{
+  background-color: cadetblue;
+  transition: 0.5s;
+}
+

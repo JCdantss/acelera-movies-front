@@ -1,0 +1,31 @@
+.containerMovie{
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+.home{
+  background-color: gray;
+  width: 50%;
+  height: 70%;
+  padding: 20px;
+}
+input{
+  height: 30px;
+  width: 50%;
+}
+button{
+  border-radius: 0 5px 5px 0;
+  background-color: lightblue;
+  color: blue;
+  height: 30px;
+  width: 10%;
+  border: none;
+}
+button:hover{
+  background-color: cornflowerblue;
+  transition: 1s;
+  color: white;
+}
+
