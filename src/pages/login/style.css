@@ -3,12 +3,12 @@
   justify-content: center;
   padding-top: 10px;
 }
-form {
+.form {
   border: 1px solid black;
   width: 300px;
   height: 400px;
   padding: 10px;
-  background-color: cyan;
+  background-color: #75a4b1;
   
 }
 input {
@@ -19,12 +19,18 @@ input {
 label {
   margin-top: 10px;
 }
-button {
-  width: 20%;
-  margin-top: 5px;
+.button-style{
+  padding: 10px;
+  width: 95%;
+  margin: 10px;
+  background-color: #27819b;
+  color: white;
+  border-radius: 5px;
+  border: none;
 }
-button:hover{
-  background-color: cadetblue;
-  transition: 0.5s;
+.button-style:hover{
+  background-color: aliceblue;
+  color: #75a4b1;
 }
+
 

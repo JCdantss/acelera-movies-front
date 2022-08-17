@@ -10,7 +10,7 @@ export const Login = () => {
 
   const handlerClick = () => {
     client.post('/login', { login, password }).then((response) => {
-      navigate('/movie')
+      navigate('/home')
     })
   }
 
@@ -24,13 +24,13 @@ export const Login = () => {
 
   return (
     <div className="container">
-      <form>
+      <form className='form'>
         <label>login</label><br />
         <input onChange={handlerChangeLogin} className="login" placeholder="Login"></input><br />
         <label>password</label><br />
         <input onChange={handlerChangePassword} className="password" placeholder="Password"></input><br />
         <a href="#">Esqueceu sua senha?</a><br />
-        <button onClick={handlerClick} type='button'>Click here</button><br />
+        <button className='button-style' onClick={handlerClick} type='button'>Click here</button><br />
       </form>
     </div>
   )
