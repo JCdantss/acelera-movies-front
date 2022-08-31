@@ -61,6 +61,7 @@ export const Modal = () => {
   }
 
   const submit = () => {
+    alert('Movie inserido com sucesso')
     client.post('/movie', {
       title,
       subtitle,
@@ -86,14 +87,14 @@ export const Modal = () => {
 
   return (
     <>
-      <button className='button-style' onClick={handleClick}>Click Here</button>
+      <li onClick={handleClick}>Add Filme</li>
       {toggle && (<div className='modal-container'>
         <div className='modal'>
-          <header>
+          <header className='style-modal'>
             <h2>Modal</h2>
             <button className='close' onClick={handleClick}>x</button>
           </header>
-          <form action='' className='inputs'>
+          <form action='' className='inputs-form'>
             <div className='inputs-form1'>
               <input onChange={handleChangeTitle} placeholder='Title' />
               <input onChange={handleChangeSubtitle} placeholder='Subtitle' />

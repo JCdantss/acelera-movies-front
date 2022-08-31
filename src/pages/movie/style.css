@@ -1,0 +1,87 @@
+section{
+  color: black;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 17% 30% auto 25%;
+  grid-template-rows: 12% 7% auto 10%;
+  grid-template-areas: 
+        "header main   main   main"
+        "nav    main   main   main"
+        "nav    main   main   main";
+  overflow: auto;
+}
+header{
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav{
+  grid-area: nav;
+}
+main{
+  grid-area: main;
+  display: flex;
+}
+.user-movie-id{
+  display: flex;
+}
+.edit{
+  flex-flow: column;
+  padding: 20px;
+}
+.button-styler{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  background-color: #8999ad;
+  border-radius: 5px;
+  padding: 10px;
+}
+.button-styler button{
+  padding: 10px;
+  margin-left: 10px;
+}
+.deletar:hover{
+  color: white;
+  background-color: red;
+  border: 1px solid white;
+}
+.editar:hover{
+  color: white;
+  background-color: greenyellow;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.info-movie{
+  padding: 20px;
+}
+.movie-image{
+  padding: 20px;
+}
+.preview-home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.preview-home:hover{
+  background-color: #8999ad;
+  transition: 1s;
+}
+.img-movie-2{
+  background-image : url('https://images5.alphacoders.com/809/809891.jpg');
+  background-size: 90% 100%;
+  border-radius: 10px;
+  background-color: #3498DB; 
+  height: 300px;
+  width: 200px;
+  box-shadow: 5px 5px 18px 1px #ffffff;
+}
+.font{
+  color: white;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
